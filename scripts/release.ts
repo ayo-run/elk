@@ -15,3 +15,9 @@ await git.push(['--force'])
 
 console.log('Checkout main branch')
 await git.checkout('main')
+
+// TODO: handle multiple remotes with a data structure
+console.log('Push tags')
+await git.push(['--tags'])
+await git.push(['--tags', 'gh'])
+await git.push(['--tags', 'sh'])
